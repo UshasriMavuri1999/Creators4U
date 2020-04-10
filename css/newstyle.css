@@ -1,0 +1,517 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+/* ***************************NavBar and Content starts********************** */
+
+.header{
+  margin-bottom: 40px;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: animate 16s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,100%{
+      background-image: url('../images/tech1.jpg');
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }
+    25%{
+      background-image: url('../images/tech2.jpg');
+    }
+    50%{
+      background-image: url('../images/tech3.jpg');
+    }
+    75%{
+      background-image: url('../images/tech4.jpg');
+    }
+}
+a{
+  text-decoration: none;
+}
+.nav-item a{
+  color: #F6FF30!important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px;
+}
+.active a{
+  font-weight: 1000!important;
+  color: #00FFFF!important;
+}
+.nav-item a:hover{
+    color:#00FFFF!important;
+}
+#button{
+  background-color: white;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px;
+  color: #3ABFF8;
+}
+#button:hover{
+  background-color: #fff;
+  color: #A00B0B;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.content{
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  margin: 100px 10px 10px 10px;
+}
+.content h1{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}
+.content h2{
+  font-size: 3rem;
+  color: #F6FF30!important;
+  font-weight: 400;
+}
+.content p{
+  font-size: 1.2rem;
+  color: #fff;
+}
+.buttons button{
+  background-color: white;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px;
+  color: #3ABFF8;
+}
+.buttons button:hover{
+  background-color: #fff;
+  color: #A00B0B;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.highlight{
+  color: #FFFF00;
+  font-weight: bold;
+}
+/* ***************************Navbar and Content Ends************************* */
+/* *************************services starts********************************** */
+.services{
+  text-align: center;
+  /* margin-bottom: 80px; */
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.service-heading h1{
+  text-align: center;
+  font-size:2.5rem;
+  color: #D61F1F;
+}
+.service-heading p{
+  text-align: center;
+  color: #096265;
+  font-size: 1.5rem;
+}
+.webdevelopment,.androdevelopment,.systemsoftware{
+  padding: 20px;
+  background-color: #f7f7f9;
+  clip-path:polygon(100% 0%,100% 100%,75% 99%,25% 99%,0% 100%,0% 0%,25% 1%,75% 1%,100% 0%);
+}
+.webdevelopment{
+  padding: 30px;
+  background-color: #f7f7f9;
+  clip-path:polygon(100% 0%,100% 100%,75% 99%,25% 99%,0% 100%,0% 0%);
+}
+.systemsoftware{
+  padding: 30px;
+  background-color: #f7f7f9;
+  clip-path:polygon(100% 100%,0% 100%,0% 0%,25% 1%,75% 1%,100% 0%);
+}
+.service-content p{
+  text-align: center;
+  font-size: 1rem;
+}
+.service-content h2{
+  text-align: center;
+  font-size: 1.7rem;
+  color: #096265;
+  margin-top: 3px;
+}
+.service-content{
+  background-color: #15AFA5;
+}
+/* ***************************services ends************************************* */
+/* **********************Footer Section Starts****************************** */
+.footersection{
+  /* background-color: #1490D6; */
+  /* background-image: url('../images/mac.png'); */
+  padding:10px;
+  text-align: center;
+}
+
+/* *************************Footer Section Ends******************************** */
+/* *************************Get a Quote Form Starts **************************** */
+#box {
+  margin-left: 50px;
+  padding:5px;
+}
+#box form {
+ display:none;
+ position:absolute;
+ font-size: 1.2rem;
+ width: 60%;
+ height: auto;
+ padding: 20px;
+ margin-left: 210px;
+ background-color: #fff;
+ z-index: 10;
+ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.quoteform input[type="submit"] {
+  border: 2px solid #A00B0B;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #A00B0B;
+    margin-left: 300px;
+}
+.quoteform input[type="submit"]:hover{
+border: 2px solid #3ABFF8;
+background-color: #fff;
+color: #3ABFF8;
+text-decoration: none;
+box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.quoteform input[type="text"],.quoteform input[type="email"]{
+border: 0.5px solid #3ABFF8;
+font-size: 1.2rem;
+background-color: #fff;
+text-decoration: none;
+}
+.message{
+  border: 0.5px solid #3ABFF8;
+  font-size: 1.2rem;
+  background-color: #fff;
+  text-decoration: none;
+}
+.quoteform input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.quoteform .message:hover,.quoteform input[type="text"]:hover,.quoteform input[type="email"]:hover,
+.quoteform input[type="checkbox"]:hover{
+border: 0.5px solid #3ABFF8;
+font-size: 1.2rem;
+background-color: #fff;
+text-decoration: none;
+box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+#box form h1{
+  color: #A00B0B;
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/* ***********************Get A Quote Form Ends*********************************** */
+/* *************************What we Do Starts************************** */
+.wedo-heading h1{
+  text-align: center;
+  font-size:2.5rem;
+  color: #D61F1F;
+}
+.wedo-heading p{
+  text-align: center;
+  color: #096265;
+  font-size: 1.5rem;
+}
+.whatwedo{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.wedo-content p{
+  text-align: center;
+  font-size: 1rem;
+}
+.wedo-content h4{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #096265;
+  margin-top: 3px;
+}
+.wedo-content{
+  background-color: #fff;
+}
+.feature{
+  padding : 50px;
+}
+.feature:hover{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/* ***************************What we Do Ends*********************************** */
+/* *****************************Our Work Starts************************************ */
+.work-heading h1{
+  text-align: center;
+  font-size:2.5rem;
+  color: #D61F1F;
+}
+.work-heading p{
+  text-align: center;
+  color: #096265;
+  font-size: 1.5rem;
+}
+.work-content{
+  width: 60%;
+  margin: auto;
+  height: 40%;
+  margin-bottom: 10px;
+}
+.icon{
+  background-color: black;
+  color: #fff;
+}
+/* *******************************Our Work Ends*************************************** */
+/* ***************************Contact Us Starts****************************** */
+.contact-heading h1{
+  text-align: center;
+  font-size:2.5rem;
+  color: #D61F1F;
+}
+.contact-heading p{
+  text-align: center;
+  color: #096265;
+  font-size: 1.5rem;
+}
+.contactform{
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+.contactus{
+  background-color: #f7f7f9;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.contactform input[type="submit"] {
+    background-color: #096265;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 300px;
+    align-items: center;
+}
+.contactform input[type="submit"]:hover {
+    border-color: #096265;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #096265;
+    /* margin-left: 300px; */
+    
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.contactform input[type="text"],.contactform input[type="email"],
+.contactform .comment{
+border: 0.5px solid #3ABFF8;
+font-size: 1rem;
+background-color: #fff;
+text-decoration: none;
+}
+
+.contactform input[type="text"]:hover,.contactform input[type="email"]:hover,
+.contactform .comment:hover
+{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/* **************************Contact Us Ends************************************** */
+/* *************************Scroll Button Starts ********************************** */
+#myBtn{
+  display: none;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  color: #fff;
+  background: #096265;
+  padding: 10px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+#myBtn:hover{
+  background:#606060;
+}
+/* ****************************Scroll Button Ends*************************** */
+
+.carousel-item{
+  z-index: -1;
+}
+.newsletter {
+  background-color: black;
+  padding: 20px;
+  color:white;
+  text-align: center;
+  /* margin-bottom: 80px; */
+  width: 100%;
+  height: auto;
+}
+
+.newsletter_email {
+  width: 30%;
+  height: 40px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.newsletter_submit_btn {
+  height: 45px;
+  background-image: linear-gradient(147deg, cornsilk 0%, lightblue 74%);
+  border-radius: 0px 30px 30px 0px; 
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.copyright {
+  text-align: center;
+}
+li {
+  list-style: none;
+  color:#007bff;
+}
+a:hover{
+  text-decoration: none;
+}
+.menu1{
+  display:flex;
+  justify-content:space-around;
+}
+
+.footer_h1{
+ text-shadow: 2px 2px 8px lightblue;
+ font-size:50px;
+}
+.menuitems{
+  display:flex ;
+  justify-content:space-around;
+  line-height: 30px;
+  /* color: #096265; */
+}
+
+/* media queries for phones */
+@media screen and (min-width:320px) and (max-width: 600px) {
+  
+  .contactform{
+    width: 70%;
+  }
+  .contactform input[type="submit"] {
+    font-size: 0.9rem;
+    margin-left: 5rem;
+  }
+  .menuitems{
+    display: inline;
+  }
+  .menu1 h1{
+    margin-top: 50%;
+  }
+#button{
+  font-size: 0.9rem;
+}
+.content #h1, .content h2{
+  font-size: 1.5rem;
+}
+
+#navbarSupportedContent a{
+  font-size: medium;
+}
+#navbarSupportedContent img{
+  width: 50%;
+  height: 50%;
+}
+
+#box {
+  margin-left: 0px;
+  padding:0px;
+}
+#box form {
+ font-size: 0.9rem;
+ width: 70%;
+ padding: 10px;
+ margin-left: 0px;
+ z-index: 10;
+}
+.quoteform input[type="submit"] {
+    font-size: 0.9rem;
+    margin-left: 0px;
+}
+
+.quoteform input[type="text"],.quoteform input[type="email"]{
+font-size: 0.9rem;
+}
+.message{
+  font-size: 0.9rem;
+}
+.quoteform .message:hover,.quoteform input[type="text"]:hover,.quoteform input[type="email"]:hover,
+.quoteform input[type="checkbox"]:hover{
+font-size: 0.9rem;
+}
+#box form h1{
+  font-size: 1.2em;
+}
+.wedo-heading p, .services p, .worksection p, .contact-heading p{
+  font-size:0.9rem ;
+}
+.wedo-heading h1, .services h1, .worksection h1, .contact-heading h1{
+  font-size: 1.5rem;
+}
+
+.feature{
+  padding: 30px;
+}
+.feature h4{
+  font-size: 1.2rem;
+}
+.services h2{
+  font-size: 1.2rem;
+}
+
+.newsletter h1{
+  font-size: 1.5rem;
+}
+.newsletter_email {
+  width: 70%;
+  border-radius: 0px 0px 0px 0px;
+}
+.newsletter_submit_btn {
+  border-radius: 30%;
+}
+}
+/* media queries for tab */
+@media screen and (min-width:601px) and (max-width: 1024px) {
+  .quoteform input[type="submit"] {
+    font-size: 0.9rem;
+    margin-left: 0px;
+}
+.contactform input[type="submit"] {
+  font-size: 0.9rem;
+  margin-left: 10rem;
+}
+}
+
+
