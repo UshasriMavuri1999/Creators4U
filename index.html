@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Creators4U home page">
+    <meta name="Description" content="Android development">
+    <meta name="Description" content="web development">
+    <meta name="Description" content="Software development">
+    <meta name="Description" content="Online tools">
+    <meta name="robots" content="noodp">
+    <meta name="keywords" content="Creators4U, creators4u, homepage, web, android, software" >
+    <title>Creators4U</title>
+    <link rel = "icon" href =  "./images/logo.png"type = "image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/newstyle.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ***********Header starts**************** -->
+    <section class = "header">
+        <nav class="navbar-expand-lg">
+          <button onclick="tag()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i style="color:white;" class="fa fa-bars"></i></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" class="rounded"  alt="creators4ulogo"></a>
+            <ul class="navbar-nav ml-auto menu-items">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About US <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#whatwedo">What We Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">We Serve In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Our Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <button id="button" class="btn my-2 my-sm-0" type="submit">Get a Quote</button>
+          </div>
+          </div>
+        </nav>
+        <div class="quoteform" id="box">
+          <form action="/action_page.php">
+            <h1>Request A Quote Now</h1>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="full name" id="name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="mobile number" id="mobile">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="email address" id="email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="location" id="location">
+            </div>
+            <p>Services Looking For(Please Select at least one service)</p>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Web Development</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="">Mobile Applications</label>
+            </div>
+            <div class="checkbox disabled">
+              <label><input type="checkbox" value="" >System Software</label>
+            </div>
+            <div class="form-group">
+              <label for="comment">Message</label>
+              <textarea class="form-control message" rows="5" id="message" draggable="false"></textarea>
+            </div>
+            <input type="submit" class="btn " value="Request A Quote">
+          </form>
+          
+        </div>
+            <div class="content" id="contentdiv">
+              <h1 id="h1">We are Professional Developers</h1>
+              <h2>Providing the <span class="highlight">best solutions</span></h2>
+              <!-- <p>Our company has been developing applications for the custom business requirements of all our esteemed clients. -->
+                 <!-- Our developer’s skills & experience and cutting-edge technology will deliver you with Robust Applications.</p> -->
+            </div>
+    </section>
+    <!-- *****************Header ends*********************** -->
+    <!-- ********************What We Do Starts******************* -->
+    <section class="whatwedo" id="whatwedo">
+      <div class="wedo">
+      <div class="wedo-heading">
+        <h1>What We Do</h1>
+        <p>We have surplus of application services that caters to all your business needs. Creators4U esteemed programmers are always 
+          dedicated to deliver custom application development.
+        </p>
+      </div>
+      </div>
+      <div class="wedo-content">
+        <div class="row">
+            <div class="feature col-lg-4 col-md-4 col-12">
+              <img src="./images/icon_1-2.svg" alt="Explore Ideas Easily" title="Explore Ideas Easily" style="height: 65px;" alt="Creators4u feature">
+              <h4>Explore Ideas Easily</h4>
+              <p>Creators4U want to find the best solution for you. From a mobile app to a system service, we will arm your team with the knowledge
+                 to explore each option, while keeping your primary users the focus.</p>
+            </div>
+            <div class="feature col-lg-4 col-md-4 col-12">
+              <img src="./images/icon_2-3.svg" alt="Design Products that People Love to Use" title="Design Products that People Love to Use" style="height: 65px;" alt="Creators4u feature">
+              <h4>People love our products</h4>
+              <p>Our designers build experiences and the user remains the top priority throughout the design process. We will turn static designs
+                 into breathtaking websites and applications.</p>
+            </div>
+            <div class="feature col-lg-4 col-md-4 col-12">
+              <img src="./images/icon_3-1.svg" alt="Salable, Flexible, Reproducible" title="Salable, Flexible, Reproducible" style="height: 65px;" alt="Creators4u feature">
+              <h4>Salable, Flexible, Reproducible</h4>
+              <p>Failure is inevitable, but downtime doesn't have to be. Engineering in the cloud is about building fault-tolerant,
+                 highly-available solutions that heal themselves. Let us help eliminate single points of failure.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***********************What We Do Ends*********************** -->
+    <!-- ********************** Services Starts*************************** -->
+    <section class="services" id="services">
+      <div class="service">
+      <div class="service-heading">
+        <h1>Our Services</h1>
+        <p class="servcontent">We think big. We thrive on the impossible, embrace the insurmountable, and defy expectations at every turn.</p>
+        <!-- <p class="servcontent">Reveal to <strong>US YOUR IDEA</strong> furthermore, we can bring forth it together!</p> -->
+      </div>
+      <div class="service-content">
+        <div class="webdevelopment">
+        <h2>Websites</h2>
+            <p>Commerce, enterprise, knowledge or corporate web portals, developers at Creators4U have developed them all be it for B2B, B2C or 
+              C2C businesses. A essential part of our web portals is quick access to information a visitor is seeking and deeper integration 
+              with leading social media platform for quick sharing of information. They have their own search engine to search relevant info
+               on the portal and can extended with many more features.</p>
+      </div>
+      <div class="androdevelopment">
+        <h2>Mobile Applications</h2>
+        <p>We are making our clients happy and satisfied with our mobile . Pure ideas, creative solutions,
+           on time client interaction, proven track record and cost are the foundations for our success. However, our client's
+            positive feedback and satisfaction, is the best award for us.
+            And we want one for you as well.</p>
+      </div>
+      <div class="systemsoftware">
+        <h2>System Software</h2>
+        <p>Creators4U professionals who have taken the bewildering concept of system software development and simplified it to 
+          produce some of the best works in the field, also extends its services to integration of drivers, 
+          encryption technologies, file access protocols, configuration management, porting services, security management
+           and system level Windows applications and function libraries.</p>
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- *************************Servoces Ends*************************** -->
+    <!-- ****************************Our Work Starts ********************************* -->
+    <section class="worksection" id="work">
+      <div class="work-heading">
+        <h1>Our Work</h1>
+        <p >We grew up in the world of hardcore application development, turning the impossible into the elegant</p>
+      </div>
+      <div class="work-content">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active item">
+              <img class="d-block w-100" src="./images/tech.jpg" alt=" creators4u First slide">
+            </div>
+            <div class="carousel-item item">
+              <img class="d-block w-100" src="./images/tech.jpg" alt="creators4u Second slide">
+            </div>
+            <div class="carousel-item item">
+              <img class="d-block w-100" src="./images/tech.jpg" alt="creators4u Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ***************************Our Work Ends ***************************************** -->
+    <!-- ***********************Contact Us Starts***************************** -->
+    <section class="contactsection" id="contact">
+      <div class="contact-heading">
+        <h1>Contact US</h1>
+        <p >We are here to help you</p>
+      </div>
+      <div class="contactus">
+        <div class="contactform">
+          <form role="form" name="frm_feedback" id="frm_feedback"  method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="full name" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="mobile number" id="mobile" name="mobile">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="email address" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="comment">Message</label>
+              <textarea class="form-control comment" rows="5" id="message" draggable="false" name="message"></textarea>
+            </div>
+            
+            <input type="submit" class="btn" id="submit" value="Submit" name="submit">
+          </form>
+          
+        </div>
+      </div>
+    </section>
+    <!-- **************************Contact Us Ends******************************* -->
+    <!-- ***********************footer starts************************** -->
+    <section class="footersection">
+      <footer>
+        
+        <div class="scrolltop float-right">
+            <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+        </div>
+      </footer>
+    </section>
+
+    <div class="newsletter" >
+      <h1 align = "center">Subscribe for Updates </h1>
+ 
+      <form action="post" align="center">
+        <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-center">
+          <input id="newsletter_email" class="newsletter_email" type="email" placeholder="Email Address" required="required" data-error="Valid email is required.">
+          <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
+        </div>
+      </form>
+      <hr>
+      <div class="menu1" >
+          <!-- <a class="navbar-brand" href="#"><img src="./images/logo.png" class="rounded"  alt="logo"></a> -->
+          <h1  class="footer_h1">Creators4U </h1>
+        <div class="menuitems">
+          <div class="menu">
+            <ul>
+              MENU
+              <li><a  href="#">Aboutus</a></li>
+              <li><a  href="#whatwedo">whatwedo</a></li>
+              <li><a  href="#services">We Serve In</a></li>
+              <li><a  href="#work">Our Work</a></li>
+            </ul>
+          </div>
+          <div class="Usefullinks">
+            <ul>
+              USEFUL LINKS
+ 
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Get a Quote</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="Contactus" >
+            <ul>
+              CONTACTUS
+ 
+              <li><i class="fa fa-phone"></i> +91-9999999999</li>
+              <li><i class="fa fa-envelope"></i> we@creators4u.com</li>
+            </ul>
+          </div>
+        </div>
+ 
+      </div>
+      <hr>
+      <div class="copyright">
+        <span>
+          Copyright ©2020 All rights reserved,  <a href="#" target="_blank">Creators4U</a>
+        </span>
+      </div>
+ 
+ 
+ 
+    </div>
+    <!-- *****************************footer ends************************************ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $("#button").click(function() {
+          $("#box form").toggle("slow");
+          return false;
+          });
+        var flag=true;
+        function tag(){
+          document.getElementById("whatwedo").style.marginTop = flag ? "37%" : "";
+          document.getElementById("h1").style.color = flag ? "#096265" : "";  
+          flag = !flag; 
+        }
+      mybutton = document.getElementById("myBtn");
+      window.onscroll = function(){scrollFunction()};
+
+      function scrollFunction(){
+        if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+          mybutton.style.display = "block";
+        }else{
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop=0;
+      }
+        </script>
+  </body>
+</html>
