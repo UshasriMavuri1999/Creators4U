@@ -12,12 +12,13 @@
     <meta name="robots" content="noodp">
     <meta name="keywords" content="Creators4U, creators4u, homepage, web, android, software" >
     <title>Creators4U</title>
-    <link rel = "icon" href =  "./images/logo.png"type = "image/x-icon">
+    <link rel = "icon" href =  "./images/logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/newstyle.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -27,9 +28,9 @@
           <button onclick="tag()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i style="color:white;" class="fa fa-bars"></i></span>
           </button>
-
+          <a class="navbar-brand" href="#"><img src="./images/logo.png" class="rounded" id="logo1" alt="creators4ulogo" ></a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="navbar-brand" href="#"><img src="./images/logo.png" class="rounded"  alt="creators4ulogo"></a>
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" class="rounded" id="logo" alt="creators4ulogo"></a>
             <ul class="navbar-nav ml-auto menu-items">
               <li class="nav-item active">
                 <a class="nav-link" href="#">About US <span class="sr-only">(current)</span></a>
@@ -49,36 +50,41 @@
             </ul>
             <button id="button" class="btn my-2 my-sm-0" type="submit">Get a Quote</button>
           </div>
-          </div>
         </nav>
         <div class="quoteform" id="box">
-          <form action="/action_page.php">
-            <h1>Request A Quote Now</h1>
+          <form action="quote.php" id="myForm">
+            <div class="closeform">
+              <h1>Request A Quote Now</h1>
+              <span class="close">&times;</span>
+            </div>
+              
+            
+            
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="full name" id="name">
+              <input type="text" class="form-control" placeholder="full name" id="name" name="name" required="required">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="mobile number" id="mobile">
+              <input type="text" class="form-control" placeholder="mobile number" id="mobile" name="phone" required="required">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="email address" id="email">
+              <input type="email" class="form-control" placeholder="email address" id="email" name="email" required="required">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="location" id="location">
+              <input type="text" class="form-control" placeholder="location" id="location" name="location" required="required">
             </div>
-            <p>Services Looking For(Please Select at least one service)</p>
+            <p>Services Looking For(Please Select at least one service***)</p>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Web Development</label>
+              <input type="checkbox" name="check_list[]" value="Web Development"><label>Web Development</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="">Mobile Applications</label>
+              <input type="checkbox" name="check_list[]" value="Mobile Applications"><label>Mobile Applications</label>
             </div>
             <div class="checkbox disabled">
-              <label><input type="checkbox" value="" >System Software</label>
+              <input type="checkbox" name="check_list[]" value="System Software"><label>System Software</label>
             </div>
             <div class="form-group">
               <label for="comment">Message</label>
-              <textarea class="form-control message" rows="5" id="message" draggable="false"></textarea>
+              <textarea class="form-control message" rows="5" id="message" draggable="false" name="message" required="required"></textarea>
             </div>
             <input type="submit" class="btn " value="Request A Quote">
           </form>
@@ -199,19 +205,19 @@
       </div>
       <div class="contactus">
         <div class="contactform">
-          <form role="form" name="frm_feedback" id="frm_feedback"  method="post">
+          <form role="form" name="frm_feedback" id="myForm3"  method="post" action="contact.php" required="required">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="full name" id="name" name="name">
+              <input type="text" class="form-control" placeholder="full name" id="name" name="name" required="required"/>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="mobile number" id="mobile" name="mobile">
+              <input type="text" class="form-control" placeholder="mobile number" id="phone" name="phone" required="required"/>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="email address" id="email" name="email">
+              <input type="email" class="form-control" placeholder="email address" id="email" name="email" required="required"/>
             </div>
             <div class="form-group">
               <label for="comment">Message</label>
-              <textarea class="form-control comment" rows="5" id="message" draggable="false" name="message"></textarea>
+              <textarea class="form-control comment" rows="5" id="message" draggable="false" name="message" required="required"></textarea>
             </div>
             
             <input type="submit" class="btn" id="submit" value="Submit" name="submit">
@@ -234,9 +240,9 @@
     <div class="newsletter" >
       <h1 align = "center">Subscribe for Updates </h1>
  
-      <form action="post" align="center">
+      <form action="subscribe.php" align="center" id="myForm1">
         <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-center">
-          <input id="newsletter_email" class="newsletter_email" type="email" placeholder="Email Address" required="required" data-error="Valid email is required.">
+          <input id="newsletter_email" class="newsletter_email" type="email" placeholder="Email Address" required="required" name="email" data-error="Valid email is required.">
           <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">Subscribe</button>
         </div>
       </form>
@@ -280,9 +286,6 @@
           Copyright ©2020 All rights reserved,  <a href="#" target="_blank">Creators4U</a>
         </span>
       </div>
- 
- 
- 
     </div>
     <!-- *****************************footer ends************************************ -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -295,6 +298,7 @@
           $("#box form").toggle("slow");
           return false;
           });
+        
         var flag=true;
         function tag(){
           document.getElementById("whatwedo").style.marginTop = flag ? "37%" : "";
@@ -316,6 +320,18 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop=0;
       }
+        </script>
+        <script>
+           var modal = document.getElementById("box");
+           var span = document.getElementsByClassName("close")[0];
+           var btn = document.getElementById("button");
+           btn.onclick = function() {
+  modal.style.display = "block";
+  }
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+         
         </script>
   </body>
 </html>

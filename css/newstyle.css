@@ -1,5 +1,7 @@
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 body{
   overflow-x: hidden;
@@ -15,7 +17,9 @@ body{
   position: relative;
   animation: animate 16s ease-in-out infinite;
 }
-
+img#logo1{
+  display: none;
+}
 @keyframes animate {
     0%,100%{
       background-image: url('../images/tech1.jpg');
@@ -219,9 +223,25 @@ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 #box form h1{
   color: #A00B0B;
   font-size: 2em;
-  margin-bottom: 30px;
   text-align: center;
   text-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.close {
+  color:#A00B0B;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity:1px;
+}
+.closeform{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom: 30px;
+}
+.close:hover,
+.close:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* ***********************Get A Quote Form Ends*********************************** */
 /* *************************What we Do Starts************************** */
@@ -416,7 +436,19 @@ a:hover{
 
 /* media queries for phones */
 @media screen and (min-width:320px) and (max-width: 600px) {
-  
+  html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  img#logo {
+    display: none;
+    }
+  img#logo1{
+    display:inline-flex;
+    width:30%;
+    
+    margin-left: 90%;
+  }
   .contactform{
     width: 70%;
   }
@@ -504,6 +536,14 @@ font-size: 0.9rem;
 }
 /* media queries for tab */
 @media screen and (min-width:601px) and (max-width: 1024px) {
+  img#logo {
+    display: none;
+    }
+  img#logo1{
+    display:inline-flex;
+    /* width:0%; */
+    margin-left: 28rem;
+  }
   .quoteform input[type="submit"] {
     font-size: 0.9rem;
     margin-left: 0px;
