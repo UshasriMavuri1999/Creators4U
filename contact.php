@@ -16,7 +16,7 @@
 	}
 	else
 	{
-		mail("we@creators4u.com","Requesting to Contact",$message,"From: $name <$email>");
+		mail("ushasrimavuri1999@gmail.com","Requesting to Contact",$message,"From: $name <$email>");
 		echo "<script type='text/javascript'>alert('Thank you for reaching us.We will be contacting you shortly!!');
 			document.getElementById("myForm2").reset();
 			window.history.back();
