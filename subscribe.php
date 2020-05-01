@@ -8,7 +8,7 @@
 			</script>";
 	}
 	else{
-		mail("we@creators4u.com","Requesting to Subcribe","I am interested to Subscribe to your website","From :<$email>");
+		mail("ushasrimavuri1999@gmail.com","Requesting to Subcribe","I am interested to Subscribe to your website","From :<$email>");
 			echo "<script>alert('Thank you for reaching us.Hope You will enjoy our Updates');
 			window.history.back();
 			</script>";
